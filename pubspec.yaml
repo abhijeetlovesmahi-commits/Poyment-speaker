@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  notification_listener_service: ^1.0.0
   permission_handler: ^11.3.1
 
 dev_dependencies:
@@ -19,3 +18,4 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
