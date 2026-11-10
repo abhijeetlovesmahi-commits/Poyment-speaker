@@ -13,10 +13,9 @@ jobs:
         with:
           flutter-version: '3.19.x'
           channel: 'stable'
-      - run: flutter pub get
-      - run: flutter build apk --release
+      - run: flutter pub get --no-example
+      - run: flutter build apk --release --no-pub
       - uses: actions/upload-artifact@v4
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
-          
