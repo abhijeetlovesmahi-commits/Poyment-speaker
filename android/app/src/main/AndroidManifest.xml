@@ -1,4 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.payment_speaker">
+    
     <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -27,7 +29,6 @@
             </intent-filter>
         </activity>
         
-        <!-- Embedding v2 Android Meta-data Required by Plugins -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
