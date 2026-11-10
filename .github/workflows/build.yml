@@ -14,6 +14,7 @@ jobs:
           flutter-version: '3.19.x'
           channel: 'stable'
       - run: flutter create . --platforms=android --project-name=poyment_speaker
+      - run: echo "android.defaultConfig.minSdk=21" >> android/gradle.properties
       - run: flutter pub get
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
